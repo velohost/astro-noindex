@@ -1,6 +1,7 @@
 import type { AstroIntegration } from "astro";
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 type NoIndexOptions = {
   /**
@@ -81,7 +82,7 @@ export default function astroNoIndex(
       "astro:build:done"({ dir }) {
         if (!shouldInject) return;
 
-        const outDir = new URL(dir).pathname;
+        const outDir = fileURLToPath(dir);
 
         walk(outDir, filePath => {
           if (!filePath.endsWith(".html")) return;

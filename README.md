@@ -55,6 +55,8 @@ Everything is **explicit and deterministic**.
 npm install astro-noindex
 ```
 
+Compatible with Astro `4`, `5`, and `6`.
+
 ---
 
 ## Usage
