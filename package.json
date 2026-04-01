@@ -5,7 +5,7 @@
   "homepage": "https://velohost.co.uk/plugins/astro-noindex/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/velohost/astro-noindex.git"
+    "url": "git+https://github.com/velohost/astro-noindex.git"
   },
   "bugs": {
     "url": "https://github.com/velohost/astro-noindex/issues"
